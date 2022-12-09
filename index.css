@@ -1,0 +1,1254 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*Main CSS fixes*/
+/* --------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* --------------------------------------------- */
+/*General styles for HTML objects*/
+
+.PrimaryButton {
+    all: unset;
+
+    background: #EA591A;
+    box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+
+    border-radius: 5px;
+    font-family: 'Inter', serif;
+    font-size: 24px;
+}
+
+.PrimaryButton:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+input {
+    all: unset;
+
+    background-color: whitesmoke;
+
+    padding-left: 5px;
+    color: black;
+    text-align: start;
+    font-size: 16px;
+
+    width: 300px;
+    height: 40px;
+
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(2px);
+
+    border: 4px solid #F7ECEC;
+    border-radius: 8px;
+}
+
+input:hover {
+    cursor: text;
+}
+
+input:focus {
+    border-color: cornflowerblue;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    min-height: 100vh;
+    height: fit-content;
+
+    flex-grow: 1;
+    align-self: stretch;
+
+    text-align: center;
+    background: #4C3361;
+
+    color: #FEFEFE;
+}
+
+.Root_Content_Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+/* --------------------------------------------- */
+/*Header styling*/
+custom-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.Header_Root {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 39px;
+    height: fit-content;
+    gap: 50px;
+
+    background: #31203E;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+
+    border-radius: 2px;
+
+    align-self: stretch;
+}
+
+.Header_Title_Div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.Header_Eftelling_Title {
+    width: 180px;
+    height: 60px;
+
+    font-family: 'Irish Grover', sans-serif;
+    font-size: 42px;
+
+    color: #FFFFFF;
+}
+
+.Header_Eftelling_Title:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.Header_Img_Div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.Header_Choices_Div {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+    margin-right: 40px;
+
+    gap: 40px;
+
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.Header_Choice {
+    font-family: 'Inter', serif;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.Header_Choice:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.Header_Search {
+    color: #f38f5b;
+}
+
+.Header_Search:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* --------------------------------------------- */
+/*Footer styling*/
+custom-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.Footer_Root {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    grow: 1;
+    align-self: stretch;
+
+    background-color: #31203E;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+}
+
+.Footer_Top_Div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.Footer_Top_Left {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 8px;
+    margin-left: 20px;
+    gap: 50px;
+
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.Footer_Links_Container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    gap: 35px;
+}
+
+.Footer_Links_Div {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.Footer_Link_List {
+    list-style-type: none;
+    text-align: left;
+}
+
+.link {
+    color: #A9A7A7;
+}
+
+.link:hover{
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+.Footer_Right_Foot {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+    flex-grow: 1;
+    align-self: stretch;
+
+    margin-top: 25px;
+    margin-bottom: 5px;
+    margin-right: 35px;
+}
+
+.Footer_Right_Button_Div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    gap: 15px;
+}
+
+.Footer_SocialMedia_Button {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Footer_SocialMedia_Button_Logo {
+    width: 40px;
+    height: 40px;
+}
+
+.Footer_Low_Div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.Footer_Low_Div_Line {
+    align-self: stretch;
+    flex-grow: 1;
+
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.Footer_Disclaimer_Div {
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    margin-bottom: 5px;
+    margin-left: 5px;
+
+    align-self: stretch;
+    flex-grow: 1;
+
+    gap: 30px;
+
+    font-size: 12px;
+}
+
+
+/* --------------------------------------------- */
+/*Homepage styling*/
+
+main-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.Home_Root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.Home_Mid_Div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+
+    gap: 100px;
+
+    height: 900px;
+
+    width: 500px;
+}
+
+/* --------------------------------------------- */
+/*home-banner styling*/
+home-banner {
+    display: flex;
+
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.Banner_Title {
+    font-family: 'Inter', serif;
+    font-weight: 700;
+    font-size: 22px;
+
+    text-align: center;
+
+    color: #8F2B00;
+}
+
+.Banner_Root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.Banner_Ontdek_Meer_Div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: 500px;
+
+    background: url('Assets/banner.png') no-repeat;
+    background-size: cover;
+
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.Banner_Ontdek_Meer_Content_Div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    font-size: 40px;
+    padding: 0 100px;
+}
+
+.Banner_Ontdek_Meer_Button {
+    font-size: 18px;
+
+    width: 230px;
+    height: 60px;
+
+    color: white;
+
+    border: 2px solid #F7ECEC;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.Banner_Ontdek_Meer_Button:hover{
+    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    cursor: pointer;
+}
+
+.Banner_Reservation_Div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: -80px;
+
+    width: 1000px;
+    height: 225px;
+
+    border-radius: 22px;
+
+    order: 1;
+}
+
+.Banner_Reservation_Top_Div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 300px;
+    height: 60px;
+
+    background: #EFB48A;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+
+    border-radius: 8px 8px 0 0;
+}
+
+.Banner_Reservation_Low_Div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 225px;
+
+    width: 1000px;
+    height: 100px;
+
+    background: #EFB48A;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+
+    border-radius: 0 8px 8px 8px;
+
+    order: 1;
+}
+
+.Banner_Reservation_Low_Info_Div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 17px;
+    gap: 10px;
+
+    width: 500px;
+    height: 78px;
+}
+
+.Banner_Reservation_Low_Info {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #4E4E4E;
+}
+
+.Banner_Reservation_Low_Button_Div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 55px;
+}
+
+
+/* --------------------------------------------- */
+/*info-div styling*/
+
+.Info_Root_Div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 450px;
+    height: 800px;
+
+    background: #EFB48A;
+    border-radius: 10px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+
+    order: 2;
+}
+
+.Info_Img_Div {
+    margin-top: -2px;
+
+    width: 450px;
+    height: 360px;
+    top: 0.5px;
+
+    border-radius: 10px 10px 0 0;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+}
+
+.Info_InfoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.Info_Text_Div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.Info_Title {
+    font-family: 'Inter', serif;
+    font-weight: 700;
+    font-size: 36px;
+
+    text-align: center;
+
+    color: #8F2B00;
+}
+
+.Info_Text {
+    padding: 35px;
+
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 29px;
+    text-align: start;
+
+    color: #4E4E4E;
+}
+
+
+.Info_Button_Div {
+    height: 70px;
+}
+
+/* --------------------------------------------- */
+/*img-showcase styling*/
+
+.Showcase_Root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+
+    height: 900px;
+}
+
+.Showcase_Top_Div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.Showcase_Title{
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.Showcase_Line_Div{
+    width: 80vw;
+}
+
+.Showcase_Image_Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+
+}
+
+.Showcase_Image {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+
+    border-radius: 4px;
+}
+
+.Showcase_Image:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.Showcase_Top_Image_Div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.Showcase_Top_Image {
+    width: 680px;
+    height: 405px;
+}
+
+.Showcase_Low_Image_Div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 85px;
+
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.Showcase_Low_image {
+    width: 410px;
+    height: 250px;
+}
+
+/* --------------------------------------------- */
+/*weather-forecast styling*/
+
+.WeatherForecast_Root {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+    margin: 10px 0 30px 0;
+
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.WeatherForecast_Content_Div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    height: fit-content;
+    width: 400px;
+
+    padding: 15px 10px 15px 10px ;
+
+    background: #EFB48A;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+
+}
+
+.WeatherForecast_Forecast_Div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    gap : 5px;
+
+    font-family: 'Inter', serif;
+
+    font-size: 24px;
+    text-align: start;
+
+    color: #4E4E4E;
+}
+
+.WeatherForecast_Forecast_Text{
+    font-family: 'Inter', serif;
+
+    font-weight: 700;
+    font-size: 20px;
+
+    color: #EA591A;
+}
+
+/* --------------------------------------------- */
+/*over-ons styling*/
+over-ons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.OverOns_Root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    height: fit-content;
+
+    flex-grow: 1;
+    align-self: stretch;
+
+    gap: 50px;
+}
+
+.OverOns_Title {
+    font-family: 'Irish Grover', fantasy;
+
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.OverOns_Line_Div {
+    align-self: stretch;
+    flex-grow: 1;
+
+    padding: 0 100px 0 100px;
+}
+
+.OverOns_Content_Div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap : 100px;
+
+    padding-left: 100px;
+    padding-right: 100px;
+
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.OverOns_Content_Text {
+    font-family: 'Inter', serif;
+    font-size: 35px;
+    text-align: start;
+
+    color: #F3F3FF;
+
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.OverOns_Content {
+    width: 650px;
+    height: 430px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(2px);
+
+    border-radius: 8px;
+}
+
+/* --------------------------------------------- */
+/*ticket-purchase styling*/
+ticket-purchase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.TicketPurchase_Root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+
+    height: fit-content;
+
+    margin-bottom: 50px;
+}
+
+.TicketPurchase_Title{
+    margin-top: 20px;
+
+    font-family: 'Inter', serif;
+
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #EA591A;
+}
+
+.TicketPurchase_Line_Div{
+    width: 60vw;
+}
+
+.TicketPurchase_Lower_Div {
+    margin-left: 25px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 100px;
+
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+/* --------------------------------------------- */
+/*ticketpurchase-top styling*/
+.TicketPurchase_Top_Root {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-left: 25px;
+
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.TicketPurchase_Top_Title_Div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 100px;
+
+    background: #EFB48A;
+    border-radius: 10px 10px 0 0;
+
+    height: 60px;
+    width: 600px;
+
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+
+    color: #8F2B00;
+}
+
+.TicketPurchase_Top_Info_Div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #EFB48A;
+    border-radius: 10px;
+
+    height: 240px;
+    width: 1000px;
+
+    text-align: start;
+}
+
+.TicketPurchase_Top_Info_Part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    height: 120px;
+
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.TicketPurchase_Top_Info_Text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    margin-left: 20px;
+}
+
+.TicketPurchase_Info_Button_Div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+
+    flex-grow: 1;
+    align-self: stretch;
+
+    font-family: 'Inter', serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.TicketPurchase_Info_Text {
+    font-family: 'Inter', serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #4E4E4E;
+}
+
+.TicketPurchase_Info_Line {
+    width: 55rem;
+}
+
+/* --------------------------------------------- */
+/*ticketpurchase-top-buttons styling*/
+
+.TicketPurchase_Top_Buttons_Root {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+    margin-right: 50px;
+
+    width: fit-content;
+}
+
+.TicketPurchase_Top_Buttons_Circle {
+    all: unset;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+
+    background-color: rgb(255, 136, 90);
+}
+
+.TicketPurchase_Top_Buttons_Circle:hover{
+    opacity: 0.80;
+    cursor: pointer;
+}
+
+.TicketPurchase_Top_Button_Block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+
+    border-radius: 4px;
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+    background-color: rgb(255, 136, 90);
+}
+
+/* --------------------------------------------- */
+/*ticketpurchase-info styling*/
+h4{
+    font-family: 'Inter', serif;
+    font-size: 36px;
+
+    color: #F3F3FF;
+}
+
+.TicketPurchase_Info_Root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 50px;
+    width: 400px;
+    height: 450px;
+    border-radius: 8px;
+
+    background-color: #EFB48A;
+
+    filter: drop-shadow(1px 6px 6px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(2px);
+}
+
+.TicketPurchase_Info_Title_Div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+    gap: 5px;
+}
+
+.TicketPurchase_Info_Title{
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+
+    color: #8F2B00;
+}
+
+.TicketPurchase_Info_Line_Div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 300px;
+}
+
+.TicketPurchase_Info_InputField {
+    color: #F3F3FF;
+
+    height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    font-family: 'Inter', serif;
+    font-size: 30px;
+
+    gap: 10px;
+    justify-content: center;
+}
+
+.TicketPurchase_Info_EmailInput {
+    width: 300px;
+    height: 35px;
+}
+
+.TicketPurchase_Info_Email_Error {
+    text-align: start;
+    font-size: 12px;
+    color: #da3c3c;
+}
+
+
+.TicketPurchase_Info_TicketInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    margin-left: 50px;
+    margin-bottom: 20px;
+
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.TicketPurchase_Info_PurchaseButton {
+    width: 300px;
+    height: 60px;
+    margin-bottom: 20px;
+
+    color: white;
+
+    border: 2px solid #F7ECEC;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0);
+
+    font-family: 'Inter', serif;
+    font-size: 36px;
+}
+
+.TicketPurchase_Info_PurchaseButton:hover{
+    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    cursor: pointer;
+}
+
+/* --------------------------------------------- */
+/*ticketpurchase-datepicker styling*/
+
+.TicketPurchase_DatePicker_Title_Div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 50px;
+
+    border-radius: 8px 8px 0 0;
+    background-color: #EFB48A;
+
+    height : 50px;
+    width : 290px;
+}
+
+.TicketPurchase_DatePicker_Title {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+
+    color: #8F2B00;
+}
+
+.TicketPurchase_DatePicker_CalenderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+    background-color: #EFB48A;
+
+    height : 450px;
+    width : 800px
+}
+
+/*.Calender {*/
+/*    --rdp-cell-size: 40px;*/
+/*    --rdp-accent-color: #ff5454;*/
+/*    --rdp-background-color: #ff5454;*/
+/*    !* Switch to dark colors for dark themes *!*/
+/*    --rdp-accent-color-dark: #cc6d47;*/
+/*    --rdp-background-color-dark: #fa5c5c;*/
+/*    !* Outline border for focused elements *!*/
+/*    --rdp-outline: 2px solid var(--rdp-accent-color);*/
+/*    !* Outline border for focused and selected elements *!*/
+/*    --rdp-outline-selected: 2px solid rgba(164, 14, 14, 0.75);*/
+/*}*/

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../index.css">
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+    <script src="../Pages/Homepage/MainMenu.js"></script>
+    <script src="../Pages/Homepage/Info.js"></script>
+    <script src="../Pages/Homepage/Banner.js"></script>
+    <script src="../Pages/Homepage/Showcase.js"></script>
+    <script src="../Pages/Homepage/WeatherForecast.js"></script>
+
+    <script src="../Pages/OverOns/OverOns.js"></script>
+
+    <script src="../Pages/TicketPurchase/TicketPurchase.js"></script>
+    <script src="../Pages/TicketPurchase/TicketPurchase-DatePicker.js"></script>
+    <script src="../Pages/TicketPurchase/TicketPurchase-Info.js"></script>
+    <script src="../Pages/TicketPurchase/TicketPurchase-Top.js"></script>
+    <script src="../Pages/TicketPurchase/TicketPurchase_Top_Buttons.js"></script>
+
+
+    <script src="../Menu/Header/Header.js"></script>
+    <script src="../Menu/Footer/Footer.js"></script>
+
+    <script>
+        function navigate(url) {
+
+            const RootDiv = document.getElementById("Root_Content");
+
+            switch (url) {
+                case 'TICKET' :
+                    RootDiv.innerHTML = '';
+                    RootDiv.innerHTML = `<ticket-purchase id="Ticket_Purchase"></ticket-purchase>`;
+                    break;
+                case 'ABOUT_US' :
+                    RootDiv.innerHTML = '';
+                    RootDiv.innerHTML = `<over-ons id="About_Us"></over-ons>`;
+                    break;
+                default :
+                    RootDiv.innerHTML = '';
+                    RootDiv.innerHTML = `<main-menu id="Main_Menu"></main-menu>`;
+                    break;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+<custom-header id="Custom_Header"></custom-header>
+<div id="Root_Content" class="Root_Content_Container">
+    <main-menu id="Main_Menu"></main-menu>
+</div>
+<custom-footer id="Custom_Footer"></custom-footer>
+</body>
+
+</html>
